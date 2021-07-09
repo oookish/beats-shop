@@ -1,0 +1,33 @@
+.welcome {
+  background: url(/img/welcome/beats.png) right 32% center no-repeat;
+  background-color: $grey;
+  height: 100vh;
+  min-height: 650px;
+  color: #292929;
+}
+
+.welcome__title-section {
+  width: 36%;
+}
+
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 80px 70px 80px;
+}
+
+.welcome__main-title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.welcome__title-desc {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  margin-bottom: 36px;
+}

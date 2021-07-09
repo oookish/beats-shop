@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.menu__link {
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+}
+
+.phone-number {
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number__icon-elem {
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+
+.menu__link {
+  font-size: 20px;
+  text-decoration: none;
+}
