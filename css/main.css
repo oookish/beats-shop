@@ -157,11 +157,17 @@ img {
 }
 
 .welcome {
-  background: url(/img/welcome/beats.png) right 32% center no-repeat;
   background-color: #f5f5f5;
   height: 100vh;
   min-height: 650px;
   color: #292929;
+  position: relative;
+}
+.welcome:before {
+  position: absolute;
+  content: url(/img/welcome/rectangle.png);
+  bottom: -30px;
+  right: 28%;
 }
 
 .welcome__title-section {
@@ -180,7 +186,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 30px 106px 70px 80px;
+  padding: 24px 106px 70px 80px;
+  background: url(/img/welcome/beats.png) right 16% center/44% auto no-repeat;
 }
 
 .welcome__main-title {

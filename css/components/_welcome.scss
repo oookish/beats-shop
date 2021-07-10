@@ -1,9 +1,16 @@
 .welcome {
-  background: url(/img/welcome/beats.png) right 32% center no-repeat;
   background-color: $grey;
   height: 100vh;
   min-height: 650px;
-  color: #292929;
+  color: $black;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: url(/img/welcome/rectangle.png);
+    bottom: -30px;
+    right: 28%;
+  }
 }
 
 .welcome__title-section {
@@ -15,7 +22,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 30px 106px 70px 80px;
+  padding: 24px 106px 70px 80px;
+  background: url(/img/welcome/beats.png) right 16% center / 44% auto no-repeat;
 }
 
 .welcome__main-title {
