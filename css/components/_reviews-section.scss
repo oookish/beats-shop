@@ -1,0 +1,10 @@
+.reviews-section {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: url(/img/reviewssection/ellipse.svg);
+    bottom: -20px;
+    left: 24%;
+  }
+}

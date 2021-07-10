@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  color: $black;
 }
 
 .wrapper {
@@ -22,6 +23,7 @@ body {
 .container {
   width: $containerwidth;
   margin: 0 auto;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
