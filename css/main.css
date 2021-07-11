@@ -76,6 +76,34 @@ img {
   border-radius: 100px;
   color: #fff;
   letter-spacing: 1px;
+  border: none;
+}
+.button--welcome--button:hover {
+  background: #292929;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.button--order--button {
+  cursor: pointer;
+}
+.button--order--button:hover {
+  background: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #292929;
+}
+.button--transparent--button {
+  background: transparent;
+  font-weight: 400;
+  padding: 0%;
+  margin-left: 15px;
+  text-transform: none;
+  cursor: pointer;
+}
+.button--transparent--button:hover {
+  color: #E01F3D;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .feature {
@@ -164,7 +192,7 @@ img {
   min-height: 650px;
   position: relative;
 }
-.welcome:before {
+.welcome::before {
   position: absolute;
   content: url(/img/welcome/rectangle.png);
   bottom: -30px;
@@ -219,6 +247,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.section--font-color--white .section__title {
+  color: #fff;
+}
 
 .container {
   padding: 20px 82px;
@@ -260,7 +291,7 @@ img {
   padding: 0 3%;
   position: relative;
 }
-.benefits__item:before {
+.benefits__item::before {
   content: url(/img/whysection/shapes.svg);
   position: absolute;
   top: 50px;
@@ -274,7 +305,7 @@ img {
 .benefits__item:last-child {
   padding-right: 0;
 }
-.benefits__item:last-child:before {
+.benefits__item:last-child::before {
   display: none;
 }
 
@@ -319,7 +350,7 @@ img {
 .benefits-section {
   position: relative;
 }
-.benefits-section:before {
+.benefits-section::before {
   position: absolute;
   content: url(/img/whysection/triangle.svg);
   bottom: -30px;
@@ -333,7 +364,7 @@ img {
   overflow: hidden;
   position: relative;
 }
-.reviews__display:before {
+.reviews__display::before {
   content: "";
   display: block;
   width: 90px;
@@ -430,7 +461,7 @@ img {
 .reviews-section {
   position: relative;
 }
-.reviews-section:before {
+.reviews-section::before {
   position: absolute;
   content: url(/img/reviewssection/ellipse.svg);
   bottom: -20px;
@@ -442,7 +473,7 @@ img {
   position: relative;
   color: #fff;
 }
-.order-section:before {
+.order-section::before {
   position: absolute;
   content: url(/img/ordersection/polygon.svg);
   top: -30px;
@@ -459,8 +490,109 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
+  margin-right: 27px;
 }
 .form__col:last-child {
   margin-right: 0px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__title {
+  margin-bottom: 6px;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+  margin-bottom: 10px;
+}
+.form__input:focus {
+  border-color: #E01F3D;
+  outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio--checkbox .radio__visible::before {
+  background: url(/img/ordersection/tic.svg) center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+}
+.radio__visible::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #E01F3D;
+  display: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.form__buttons {
+  padding-top: 25px;
 }

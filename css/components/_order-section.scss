@@ -3,7 +3,7 @@
   position: relative;
   color: #fff;
 
-  &:before {
+  &::before {
     position: absolute;
     content: url(/img/ordersection/polygon.svg);
     top: -30px;

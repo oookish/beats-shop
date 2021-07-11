@@ -1,7 +1,7 @@
 .reviews-section {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: url(/img/reviewssection/ellipse.svg);
     bottom: -20px;

@@ -1,7 +1,7 @@
 .benefits-section {
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: url(/img/whysection/triangle.svg);
     bottom: -30px;

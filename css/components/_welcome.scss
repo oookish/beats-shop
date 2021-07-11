@@ -4,7 +4,7 @@
   min-height: 650px;
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: url(/img/welcome/rectangle.png);
     bottom: -30px;

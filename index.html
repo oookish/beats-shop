@@ -60,7 +60,7 @@
             <div class="welcome__title-desc">
               Встречайте новую версию наушников из линейки Powerbeats.
             </div>
-            <a href="#" class="button welcome--button">Заказать</a>
+            <a href="#" class="button button--welcome--button">Заказать</a>
           </div>
           <div class="welcome__icons-section">
             <ul class="features">
@@ -177,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section class="section order-section">
+      <section class="section order-section section--font-color--white">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -224,8 +224,30 @@
                   <textarea class="form__input form__input--textarea"></textarea>
                 </label>
               </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата картой</div>
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio--checkbox">
+                  <input type="checkbox" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__buttons">
+                <input type="submit" value="Заказать" class="button button--order--button">
+                <input type="reset" value="Отчистить" class="button button--transparent--button">
+              </div>
             </div>
-            <div class="form__col"></div>
           </form>
         </div>
       </section>

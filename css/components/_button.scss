@@ -7,4 +7,35 @@
   border-radius: 100px;
   color: #fff;
   letter-spacing: 1px;
+  border: none;
+  
+  &--welcome--button {
+    &:hover {
+      background: $black;
+      transition: 0.2s;
+    }
+  }
+
+  &--order--button {
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      transition: 0.2s;
+      color: $black;
+    }
+  }
+
+  &--transparent--button {
+    background: transparent;
+    font-weight: 400;
+    padding: 0%;
+    margin-left: 15px;
+    text-transform: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $red;
+      transition: 0.2s;
+    }
+  }
 }
