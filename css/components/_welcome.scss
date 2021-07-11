@@ -6,7 +6,7 @@
 
   &::before {
     position: absolute;
-    content: url(./img/welcome/rectangle.png);
+    content: url(../img/welcome/rectangle.png);
     bottom: -30px;
     right: 28%;
   }
@@ -22,7 +22,7 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 106px 70px 80px;
-  background: url(./img/welcome/beats.png) right 16% center / 44% auto no-repeat;
+  background: url(../img/welcome/beats.png) right 16% center / 44% auto no-repeat;
 }
 
 .welcome__main-title {

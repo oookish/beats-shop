@@ -9,7 +9,7 @@ $black: #292929;
 
 $z-fixed-menu: 100;
 
-@import "layout";
+@import "layout.scss";
 
 @import './components/_button.scss';
 @import './components/_feature.scss';
