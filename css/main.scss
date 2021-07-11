@@ -7,6 +7,7 @@ $red: #E01F3D;
 $body: #666666;
 $black: #292929;
 
+$z-fixed-menu: 100;
 
 @import "layout";
 
@@ -26,6 +27,7 @@ $black: #292929;
 @import './components/_order-section.scss';
 @import './components/_form.scss';
 @import './components/_radio.scss';
+@import './components/_fixed-menu.scss';
 
 
 
