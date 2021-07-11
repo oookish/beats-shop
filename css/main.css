@@ -204,7 +204,7 @@ img {
 }
 .welcome::before {
   position: absolute;
-  content: url(/img/welcome/rectangle.png);
+  content: url(./img/welcome/rectangle.png);
   bottom: -30px;
   right: 28%;
 }
@@ -226,7 +226,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 106px 70px 80px;
-  background: url(/img/welcome/beats.png) right 16% center/44% auto no-repeat;
+  background: url(./img/welcome/beats.png) right 16% center/44% auto no-repeat;
 }
 
 .welcome__main-title {
@@ -302,7 +302,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url(/img/whysection/shapes.svg);
+  content: url(./img/whysection/shapes.svg);
   position: absolute;
   top: 50px;
   right: 0;
@@ -362,7 +362,7 @@ img {
 }
 .benefits-section::before {
   position: absolute;
-  content: url(/img/whysection/triangle.svg);
+  content: url(./img/whysection/triangle.svg);
   bottom: -30px;
   left: 24%;
 }
@@ -473,20 +473,20 @@ img {
 }
 .reviews-section::before {
   position: absolute;
-  content: url(/img/reviewssection/ellipse.svg);
+  content: url(./img/reviewssection/ellipse.svg);
   bottom: -20px;
   left: 24%;
   z-index: 100;
 }
 
 .order-section {
-  background: url(/img/ordersection/background.png) center center no-repeat;
+  background: url(./img/ordersection/background.png) center center no-repeat;
   position: relative;
   color: #fff;
 }
 .order-section::before {
   position: absolute;
-  content: url(/img/ordersection/polygon.svg);
+  content: url(./img/ordersection/polygon.svg);
   top: -30px;
   right: 24%;
 }
@@ -568,7 +568,7 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(/img/ordersection/tic.svg) center center no-repeat;
+  background: url(./img/ordersection/tic.svg) center center no-repeat;
 }
 
 .radio__elem {
