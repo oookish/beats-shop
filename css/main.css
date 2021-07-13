@@ -6,8 +6,6 @@ body {
   font-size: 16px;
   font-family: "Play", Arial, Helvetica, sans-serif;
   line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: #292929;
 }
