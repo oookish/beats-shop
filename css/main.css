@@ -125,6 +125,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
 }
 
 .features__item {
