@@ -5,7 +5,7 @@
 
   &--checkbox {
     .radio__visible {
-      border-radius: 4px;
+      border-radius: rem(4px);
 
       &::before {
         background: url(../img/ordersection/tic.svg) center center no-repeat;
@@ -25,16 +25,16 @@
 }
 
 .radio__visible {
-  height: 26px;
-  width: 26px;
+  height: rem(26px);
+  width: rem(26px);
   border-radius: 50%;
   position: relative;
   background: #fff;
 
   &::before {
     content: '';
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: $red;
     display: none;
     border-radius: 50%;
@@ -46,10 +46,10 @@
 }
 
 .radio__title {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: rem(10px);
+  margin-right: rem(20px);
 }
 
 .form__buttons {
-  padding-top: 25px;
+  padding-top: rem(25px);
 }

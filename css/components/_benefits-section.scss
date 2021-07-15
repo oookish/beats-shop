@@ -4,7 +4,17 @@
   &::before {
     position: absolute;
     content: url(../img/whysection/triangle.svg);
-    bottom: -30px;
+    bottom: rem(-30px);
     left: 24%;
+
+    @include tablets {
+      left: 10%;
+    }
+  }
+}
+
+.benefits__container {
+  @include tablets {
+    padding: 25% 0%;
   }
 }

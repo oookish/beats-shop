@@ -7,12 +7,20 @@
   padding: 0 3%;
   position: relative;
 
+  @include tablets {
+    padding: 0% 0%;
+  }
+
   &::before {
     content: url(../img/whysection/shapes.svg);
     position: absolute;
-    top: 50px;
+    top: rem(50px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child {

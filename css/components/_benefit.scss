@@ -5,18 +5,18 @@
 
 .benefit__image-wrapper {
   display: inline-block;
-  height: 128px;
-  width: 128px;
+  height: rem(128px);
+  width: rem(128px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
 
 .benefit__icon {
-  width: 65px;
-  height: 65px;
+  width: rem(65px);
+  height: rem(65px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,7 +24,7 @@
 }
 
 .benefit__title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 700;
 }
 

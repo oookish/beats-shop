@@ -1,12 +1,12 @@
 .button {
   font-weight: 700;
   text-decoration: none;
-  padding: 18px 38px;
+  padding: rem(18px) rem(38px);
   text-transform: uppercase;
   background: $red;
-  border-radius: 100px;
+  border-radius: rem(100px);
   color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: rem(1px);
   border: none;
   
   &--welcome--button {
@@ -29,7 +29,7 @@
     background: transparent;
     font-weight: 400;
     padding: 0%;
-    margin-left: 15px;
+    margin-left: rem(15px);
     text-transform: none;
     cursor: pointer;
 

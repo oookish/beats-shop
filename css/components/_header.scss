@@ -1,36 +1,55 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 5px;
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {
-  margin-right: 21px;
+  margin-right: rem(21px);
+  margin-bottom: 12px;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: rem(0px);
   }
 }
 
 .menu__link {
   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  white-space: nowrap;
 
   &:hover {
     color: $red;
     transition: 0.2s;
+  }
+}
+
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
   }
 }
 
 .phone-number {
-  font-size: 18px;
+  font-size: rem(18px);
   text-decoration: none;
   display: flex;
   align-items: center;
+  padding-top: 5px;
 
   &:hover {
     color: $red;
@@ -38,14 +57,22 @@
   }
 }
 
+.phone-number__icon {
+  flex-shrink: 0;
+}
+
 .phone-number__icon-elem {
-  width: 13px;
-  height: 13px;
-  margin-right: 6px;
-  margin-top: 2px;
+  width: rem(13px);
+  height: rem(13px);
+  margin-right: rem(6px);
+  margin-top: rem(2px);
+}
+
+.phone-number__text {
+  white-space: nowrap;
 }
 
 .menu__link {
-  font-size: 20px;
+  font-size: rem(20px);
   text-decoration: none;
 }
