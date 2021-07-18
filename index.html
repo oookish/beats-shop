@@ -18,9 +18,14 @@
       <section class="section welcome__section">
         <div class="container welcome__container">
           <header class="header">
-            <a href="#" class="logo">
-              <img src="./img/welcome/logo.svg" alt="logo" class="logo__pic">
+            <a href="" class="logo">
+              <svg class="icon">
+                <use xlink:href="./sprite.svg#logo"></use>
+              </svg>
             </a>
+            <!-- <a href="#" class="logo">
+              <img src="./img/welcome/logo.svg" alt="logo" class="logo__pic">
+            </a> -->
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -48,7 +53,10 @@
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
               <span class="phone-number__icon">
-                <img src="./img/welcome/tel.svg" class="phone-number__icon-elem" alt="tel">
+              <svg class="phone-number__icon-elem">
+                <use xlink:href="./sprite.svg#tel"></use>
+              </svg>
+                <!-- <img src="./img/welcome/tel.svg" class="phone-number__icon-elem" alt="tel"> -->
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
@@ -76,7 +84,10 @@
             <ul class="features">
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/welcome/noise 1.svg" alt="vector">
+                  <svg class="icon">
+                    <use xlink:href="./sprite.svg#noise 1"></use>
+                  </svg>
+                  <!-- <img src="./img/welcome/noise 1.svg" alt="vector"> -->
                 </div>
                 <div class="feature__text">
                   Безупречный звук
@@ -84,7 +95,10 @@
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/welcome/charging 1.svg" alt="vector">
+                  <svg class="icon">
+                    <use xlink:href="./sprite.svg#charging 1"></use>
+                  </svg>
+                  <!-- <img src="./img/welcome/charging 1.svg" alt="vector"> -->
                 </div>
                 <div class="feature__text">
                   До 40 часов работы
@@ -92,7 +106,10 @@
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="./img/welcome/plug 1.svg" alt="vector">
+                  <svg class="icon">
+                    <use xlink:href="./sprite.svg#plug 1"></use>
+                  </svg>
+                  <!-- <img src="./img/welcome/plug 1.svg" alt="vector"> -->
                   </div>
                 <div class="feature__text">
                   Технология Fast Fuel
@@ -112,7 +129,10 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/whysection/battery.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#battery"></use>
+                  </svg>
+                  <!-- <img src="./img/whysection/battery.svg" alt="icon" class="benefit__icon"> -->
                 </div>
               </div>
               <div class="benefit__text">
@@ -125,7 +145,10 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/whysection/sound.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#sound"></use>
+                  </svg>
+                  <!-- <img src="./img/whysection/sound.svg" alt="icon" class="benefit__icon"> -->
                 </div>
               </div>
               <div class="benefit__text">
@@ -138,7 +161,10 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/whysection/time.svg" alt="icon" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./sprite.svg#time"></use>
+                  </svg>
+                  <!-- <img src="./img/whysection/time.svg" alt="icon" class="benefit__icon"> -->
                 </div>
               </div>
               <div class="benefit__text">
@@ -152,7 +178,7 @@
         </div>
       </section>
       <section class="section reviews-section">
-        <div class="container">
+        <div class="container reviews__container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews reviews__container">
             <div class="reviews__display">
@@ -188,7 +214,7 @@
         </div>
       </section>
       <section class="section order-section section--font-color--white">
-        <div class="container">
+        <div class="container order-section__container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
             <div class="form__col">
@@ -260,6 +286,56 @@
             </div>
           </form>
         </div>
+      </section>
+      <section class="section map__section">
+        <img src="./img/footer/map.png" alt="map-img" class="map">
+        <footer class="footer">
+          <div class="container footer__container">
+            <address class="contacts">
+              <div class="contacts__place">Москва, ул.Новый Арбат, д.31/12</div>
+              <a href="tel:+78009039090" class="phone-number footer__phone-number">
+                <span class="phone-number__icon">
+                  <img src="./img/welcome/tel.svg" class="phone-number__icon-elem" alt="tel">
+                </span>
+                <span class="phone-number__text">8 800 903 90 90</span>
+              </a>
+            </address>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__elem">
+                    <use xlink:href="./sprite.svg#vk"></use>
+                  </svg>
+                  <!-- <img src="./img/footer/vk.svg" alt="vk" class="socials__elem"> -->
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__elem">
+                    <use xlink:href="./sprite.svg#f"></use>
+                  </svg>
+                  <!-- <img src="./img/footer/f.svg" alt="fb" class="socials__elem"> -->
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__elem">
+                    <use xlink:href="./sprite.svg#in"></use>
+                  </svg>
+                  <!-- <img src="./img/footer/in.svg" alt="inst" class="socials__elem"> -->
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__elem">
+                    <use xlink:href="./sprite.svg#tv"></use>
+                  </svg>
+                  <!-- <img src="./img/footer/tv.svg" alt="tg" class="socials__elem"> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </section>
     </div>
   </div>

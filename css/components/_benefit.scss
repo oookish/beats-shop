@@ -1,5 +1,10 @@
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 
@@ -23,9 +28,20 @@
   transform: translate(-50%, -50%);
 }
 
+.benefit__text {
+  @include phones {
+    padding-top: 2%;
+  }
+}
+
 .benefit__title {
   font-size: rem(24px);
   font-weight: 700;
+  
+  @include phones {
+    margin-left: 6%;
+    margin-bottom: 1%;
+  }
 }
 
 .benefit__desc {

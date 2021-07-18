@@ -23,6 +23,10 @@
   @include tablets {
     padding: 25% 3%;
   }
+
+  @include phones {
+    padding: 15% 3%;
+  }
 }
 
 .section__title {
@@ -32,4 +36,9 @@
   margin-bottom: rem(60px);
   text-align: center;
   color: $black;
+
+  @include phones {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
 }

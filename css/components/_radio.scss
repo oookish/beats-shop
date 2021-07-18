@@ -2,6 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
+  margin-bottom: rem(10px);
 
   &--checkbox {
     .radio__visible {
@@ -48,6 +49,7 @@
 .radio__title {
   margin-left: rem(10px);
   margin-right: rem(20px);
+  padding-top: rem(2px);
 }
 
 .form__buttons {

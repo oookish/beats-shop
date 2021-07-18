@@ -13,3 +13,9 @@
     }
   }
 }
+
+.reviews__container {
+  @include phones {
+    padding: 5% 0% 10%;
+  }
+}

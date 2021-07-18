@@ -15,3 +15,15 @@
   }
 }
 
+.order-section__container {
+  @include phones {
+    padding: 15% 0%;
+  }
+}
+
+.section__title {
+  @include phones {
+    margin-bottom: 5%;
+  }
+}
+

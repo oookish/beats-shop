@@ -10,4 +10,8 @@
   color: $body;
   padding: 0% 18%;
   margin-bottom: rem(60px);
+
+  @include phones {
+    padding: 0 10%;
+  }
 }

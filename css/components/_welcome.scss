@@ -89,6 +89,11 @@
     margin-bottom: rem(5px);
     padding: 0 6%;
   }
+
+  @include phones {
+    margin-bottom: rem(5px);
+    padding: 0 4%;
+  }
 }
 
 .welcome__title-desc {
@@ -98,6 +103,11 @@
 
   @include tablets {
     padding: 0 22%;
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    padding: 0 17%;
     margin-bottom: rem(20px);
   }
 }
