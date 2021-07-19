@@ -5,9 +5,9 @@
   flex-direction: column;
   justify-content: center;
 
-  @include tablets {
-    height: 100%;
-  }
+  // @include tablets {
+  //   height: 100%;
+  // }
 
   &--font-color--white {
     .section__title {
