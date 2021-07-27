@@ -4,8 +4,9 @@
   &::before {
     position: absolute;
     content: url(../img/whysection/triangle.svg);
-    bottom: rem(-30px);
+    bottom: rem(-19px);
     left: 24%;
+    z-index: 100;
 
     @include tablets {
       left: 10%;

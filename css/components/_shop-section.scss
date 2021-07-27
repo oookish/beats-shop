@@ -1,0 +1,71 @@
+.shop-section {
+  background-color: $grey;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: url(../img/shopsection/Rectangle.png);
+    bottom: rem(-27px);
+    right: 28%;
+  }
+}
+
+.shop__container {
+  padding: rem(20px) rem(35px);
+}
+
+.shop-section__text {
+  width: rem(419px);
+  margin-left: rem(59px);
+}
+
+.shop-section-settings {
+  margin-bottom: rem(24px);
+}
+
+.settings__icon {
+  height: rem(92px);
+  width: rem(92px);
+}
+
+.shop-section__desc-title {
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: rem(24px);
+  line-height: 1.1;
+}
+
+.shop-section__desc-subtitle {
+  color: $body;
+  margin-bottom: rem(30px);
+  width: rem(368px);
+  line-height: 1.2;
+}
+
+.shop-section__char {
+  display: flex;
+  margin-bottom: rem(30px);
+}
+
+.shop-section__char-elem2 {
+  margin-left: rem(86px);
+}
+
+.shop-section__char-title {
+  color: $body;
+}
+
+.shop-section__char-subtitle {
+  font-size: rem(18px);
+  font-weight: 700;
+}
+
+.shop-section__price {
+  display: flex;
+}
+
+.shop-section__price-elem {
+  font-size: rem(36px);
+  margin-right: rem(16px);
+}

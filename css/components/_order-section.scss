@@ -6,7 +6,7 @@
   &::before {
     position: absolute;
     content: url(../img/ordersection/polygon.svg);
-    top: rem(-30px);
+    top: rem(-24px);
     right: 24%;
 
     @include tablets {

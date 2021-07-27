@@ -1,0 +1,35 @@
+.shop__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow__icon {
+  width: rem(14px);
+  height: rem(27px);
+
+  &:hover {
+    fill: $red;
+  }
+}
+
+.slider {
+  display: flex;
+  width: 930px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.slider-items {
+  display: flex;
+  position: relative;
+  transition: right 0.3s;
+}
+
+.slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 930px;
+  box-sizing: border-box;
+}
