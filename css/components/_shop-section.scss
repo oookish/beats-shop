@@ -21,6 +21,12 @@
 
 .shop-section-settings {
   margin-bottom: rem(24px);
+  &:hover {
+    .dropdown__menu, .dropdown__menu2 {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
 }
 
 .settings__icon {

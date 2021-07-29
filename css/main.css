@@ -1234,6 +1234,11 @@ img {
 .shop-section-settings {
   margin-bottom: 1.5rem;
 }
+.shop-section-settings:hover .dropdown__menu, .shop-section-settings:hover .dropdown__menu2 {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 .settings__icon {
   height: 5.75rem;
@@ -1284,6 +1289,56 @@ img {
 .shop-section__price-elem {
   font-size: 2.25rem;
   margin-right: 1rem;
+}
+
+.dropdown__menu {
+  position: absolute;
+  width: 273px;
+  height: 294px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: 0;
+  top: 0rem;
+  right: 61.5rem;
+  border-radius: 5px;
+  color: #000;
+}
+
+.dropdown__menu2 {
+  right: 3.3125rem;
+}
+
+.dropdown__list {
+  padding: 1.875rem 1.5625rem;
+}
+
+.dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 13.75rem;
+  margin-bottom: 1.5rem;
+}
+.dropdown__item:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown__item-elem2 {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  margin-left: 0.9375rem;
+}
+
+.dropdown__menu-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .fullscreen-menu {

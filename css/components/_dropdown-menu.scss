@@ -1,29 +1,42 @@
-// .dropdown__menu {
-//   // width: 157px;
-//   // height: 77px;
-//   // right: 0px;
-//   // position: absolute;
-//   background: url(../img/shopsection/dropdown/Rectangle.png) center center no-repeat;
-//   padding: 23px 23px;
-//   // right: -9999px;
-//   opacity: 0;
-//   // transition: opacity .5s;
-//   // top: 100%;
-//   color: #000;
-// }
+.dropdown__menu {
+  position: absolute;
+  width: 273px;
+  height: 294px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  top: rem(0px);
+  right: rem(984px);
+  border-radius: 5px;
+  color: #000;
+}
 
-// .dropdown__item {
-//   display: flex;
-//   justify-content: space-between;
-//   width: rem(220px);
-// }
+.dropdown__menu2 {
+  right: rem(53px);
+}
 
-// .dropdown__item-elem2 {
-//   flex: 60%;
-//   margin-left: rem(15px);
-// }
+.dropdown__list {
+  padding: rem(30px) rem(25px);
+}
 
-// .dropdown__menu-icon {
-//   height: rem(24px);
-//   width: rem(24px);
-// }
+.dropdown__item {
+  display: flex;
+  justify-content: space-between;
+  width: rem(220px);
+  margin-bottom: rem(24px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dropdown__item-elem2 {
+  flex: 60%;
+  margin-left: rem(15px);
+}
+
+.dropdown__menu-icon {
+  height: rem(24px);
+  width: rem(24px);
+}
