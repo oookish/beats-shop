@@ -16,6 +16,13 @@
     }
   }
 
+  &--shop--button {
+    &:hover {
+      background: $black;
+      transition: 0.2s;
+    }
+  }
+
   &--order--button {
     cursor: pointer;
     &:hover {

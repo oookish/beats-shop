@@ -27,6 +27,19 @@
   }
 }
 
+.reviews__list {
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .reviews__display-inner {
   display: flex;
 

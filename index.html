@@ -269,7 +269,7 @@
                   </div>
                   <div class="shop-section__price">
                     <div class="shop-section__price-elem">14 990 ₽</div>
-                    <a href="#" class="button button--shop-section--button">Заказать</a>
+                    <a href="#" class="button button--shop--button">Заказать</a>
                   </div>
                 </div>
               </li>
@@ -316,7 +316,7 @@
               <use xlink:href="./sprite.svg#right"></use>
             </svg>
           </a>
-          <script src="./JS/slider.js"></script>
+          <!-- <script src="./JS/slider.js"></script> -->
         </div>
       </section>
       <section class="section reviews-section">
@@ -324,31 +324,59 @@
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews reviews__container">
             <div class="reviews__display">
-              <div class="reviews__display-inner">
-                <div class="reviews__avatar">
-                  <img src="./img/reviewssection/billie.png" alt="photo" class="reviews__avatar-pic">
-                </div>
-                <article class="reviews__content">
-                  <h3 class="reviews__title">Отличный звук</h3>
-                  <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
-                  <div class="reviews__author">Билли Айлиш</div>
-                </article>
-              </div>
+              <ul class="reviews__list">
+                <li class="reviews__item reviews__item--active" data-linked-with="one">
+                  <div class="reviews__display-inner">
+                    <div class="reviews__avatar">
+                      <img src="./img/reviewssection/billie.png" alt="photo" class="reviews__avatar-pic">
+                    </div>
+                    <article class="reviews__content">
+                      <h3 class="reviews__title">Отличный звук</h3>
+                      <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
+                      <div class="reviews__author">Билли Айлиш</div>
+                    </article>
+                  </div>
+                </li>
+                <li class="reviews__item" data-linked-with="two">
+                  <div class="reviews__display-inner">
+                    <div class="reviews__avatar">
+                      <img src="./img/reviewssection/boy.png" alt="photo" class="reviews__avatar-pic">
+                    </div>
+                    <article class="reviews__content">
+                      <h3 class="reviews__title">Крутой дизайн</h3>
+                      <div class="reviews__text">После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.</div>
+                      <div class="reviews__author">Вадим Грачев</div>
+                    </article>
+                  </div>
+                </li>
+                <li class="reviews__item" data-linked-with="three">
+                  <div class="reviews__display-inner">
+                    <div class="reviews__avatar">
+                      <img src="./img/reviewssection/girl.png" alt="photo" class="reviews__avatar-pic">
+                    </div>
+                    <article class="reviews__content">
+                      <h3 class="reviews__title">На долго хватает заряда</h3>
+                      <div class="reviews__text">Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</div>
+                      <div class="reviews__author">Мария Орлова</div>
+                    </article>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul class="reviews__switcher">
-              <li class="reviews__swithcer-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link">
-                  <img src="./img/reviewssection/billie.png" alt="photo" class="interactive-avatar__pic">
+            <ul class="reviews-switcher">
+              <li class="reviews-swithcer__item reviews-swithcer__item--active">
+                <a href="#" class="reviews-switcher__link" data-open="one">
+                  <img src="./img/reviewssection/billie.png" alt="photo" class="reviews-swithcer__pic">
                 </a>
               </li>
-              <li class="reviews__swithcer-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img src="./img/reviewssection/boy.png" alt="photo" class="interactive-avatar__pic">
+              <li class="reviews-swithcer__item">
+                <a href="#" class="reviews-switcher__link" data-open="two">
+                  <img src="./img/reviewssection/boy.png" alt="photo" class="reviews-swithcer__pic">
                 </a>
               </li>
-              <li class="reviews__swithcer-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img src="./img/reviewssection/girl.png" alt="photo" class="interactive-avatar__pic">
+              <li class="reviews-swithcer__item">
+                <a href="#" class="reviews-switcher__link" data-open="three">
+                  <img src="./img/reviewssection/girl.png" alt="photo" class="reviews-swithcer__pic">
                 </a>
               </li>
             </ul>
@@ -540,5 +568,8 @@
       </li>
     </ul>
   </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./JS/slider.js"></script>
+  <script src="./JS/tabs.js"></script>
 </body>
 </html>
