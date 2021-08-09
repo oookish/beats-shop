@@ -1351,3 +1351,116 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.team--version--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 28.375rem;
+}
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13.75rem;
+}
+
+.team__member {
+  width: 13.75rem;
+  margin-bottom: 1.5625rem;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.team__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.team__title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #292929;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  border: 0rem;
+  background-color: #fff;
+}
+.team__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -0.75rem;
+  top: 0.125rem;
+  margin-left: -1rem;
+  margin-top: 0.4rem;
+  border: 0.4375rem solid transparent;
+  border-top: 0.4375rem solid #E01F3D;
+}
+
+.team__occ {
+  margin-bottom: 0.25rem;
+}
+
+.team__content-text {
+  color: #666666;
+}
+
+.modal {
+  background-color: #fff;
+  width: 19.375rem;
+  height: 11rem;
+  padding: 2.1875rem 3.3125rem;
+}
+
+.modal__container, .modal__button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__container {
+  z-index: 10000;
+}
+
+.modal__content {
+  font-size: 1.125rem;
+  margin-bottom: 0.9375rem;
+}

@@ -1,0 +1,22 @@
+.modal {
+  background-color: #fff;
+  width: rem(310px);
+  height: rem(176px);
+  padding: rem(35px) rem(53px);
+  
+}
+
+.modal__container, .modal__button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__container {
+  z-index: 10000;
+}
+
+.modal__content {
+  font-size: rem(18px);
+  margin-bottom: rem(15px);
+}
