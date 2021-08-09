@@ -12,11 +12,21 @@
 
 .shop__container {
   padding: rem(20px) rem(35px);
+
+  @include phones {
+    padding: rem(20px) rem(0px);
+  }
 }
 
 .shop-section__text {
   width: rem(419px);
   margin-left: rem(59px);
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .shop-section-settings {
@@ -27,11 +37,21 @@
       transition: 0.5s;
     }
   }
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .settings__icon {
   height: rem(92px);
   width: rem(92px);
+}
+
+.shop-section__desc {
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .shop-section__desc-title {
@@ -40,22 +60,45 @@
   text-transform: uppercase;
   margin-bottom: rem(24px);
   line-height: 1.1;
+
+  @include tablets {
+    font-size: rem(28px);
+  }
 }
 
 .shop-section__desc-subtitle {
   color: $body;
   margin-bottom: rem(30px);
-  width: rem(368px);
+  padding-right: rem(30px);
   line-height: 1.2;
+
+  @include tablets {
+    margin-right: 0;
+    padding: 0;
+  }
 }
 
 .shop-section__char {
   display: flex;
   margin-bottom: rem(30px);
+
+  @include tablets {
+    justify-content: space-between;
+  }
+}
+
+.shop-section__char-elem1 {
+  @include tablets {
+    padding-left: rem(120px);
+  }
 }
 
 .shop-section__char-elem2 {
   margin-left: rem(86px);
+  @include tablets {
+    padding-right: rem(100px);
+    margin-left: 0;
+  }
 }
 
 .shop-section__char-title {
@@ -74,4 +117,15 @@
 .shop-section__price-elem {
   font-size: rem(36px);
   margin-right: rem(16px);
+
+  @include tablets {
+    padding-left: rem(50px);
+    margin-right: 0;
+  }
+}
+
+.button--shop--button {
+  @include tablets {
+    margin-left: rem(30px);
+  }
 }

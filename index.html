@@ -15,6 +15,38 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
+      <div class="fullscreen-menu">
+        <a href="#" class="fullscreen-menu__close">
+          <svg class="icon fullscreen-menu__icon">
+            <use xlink:href="./sprite.svg#close"></use>
+          </svg>
+        </a>
+        <div class="fullscreen-menu__content">
+          <ul class="fullscreen-menu__list">
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">О нас</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Наушники</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Команда</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Цвета</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Отзывы</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Как мы работаем</a>
+            </li>
+            <li class="fullscreen-menu__item">
+              <a href="#" class="fullscreen-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <section class="section welcome__section">
         <div class="container welcome__container">
           <header class="header">
@@ -179,7 +211,7 @@
       </section>
       <section class="section shop-section">
         <div class="container shop__container">
-          <a href="#" class="arrow" id="left">
+          <a href="#" class="arrow arrow__left" id="left">
             <svg class="icon arrow__icon">
               <use xlink:href="./sprite.svg#left"></use>
             </svg>
@@ -271,99 +303,16 @@
                   </div>
                 </div>
               </li>
-              <li class="slider-item">
-                <img src="./img/shopsection/beatsred.png" alt="" class="item-section">
-                <div class="shop-section__text">
-                  <div class="shop-section-settings">
-                    <a href="#" class="settings__link">
-                      <svg class="icon settings__icon">
-                        <use xlink:href="./sprite.svg#settings"></use>
-                      </svg>
-                    </a>
-                    <div class="dropdown__menu dropdown__menu2">
-                      <ul class="dropdown__list">
-                        <li class="dropdown__item">
-                          <div class="dropdown__item-elem1">
-                            <svg class="dropdown__menu-icon">
-                              <use xlink:href="./sprite.svg#bluetooth"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown__item-elem2">Bluetooth</div>
-                          <div class="dropdown__item-elem3">4.0</div>
-                        </li>
-                        <li class="dropdown__item">
-                          <div class="dropdown__item-elem1">
-                            <svg class="dropdown__menu-icon">
-                              <use xlink:href="./sprite.svg#road"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown__item-elem2">Дальность</div>
-                          <div class="dropdown__item-elem3">12 м</div>
-                        </li>
-                        <li class="dropdown__item">
-                          <div class="dropdown__item-elem1">
-                            <svg class="dropdown__menu-icon">
-                              <use xlink:href="./sprite.svg#charger"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown__item-elem2">Зарядка</div>
-                          <div class="dropdown__item-elem3">3 ч</div>
-                        </li>
-                        <li class="dropdown__item">
-                          <div class="dropdown__item-elem1">
-                            <svg class="dropdown__menu-icon">
-                              <use xlink:href="./sprite.svg#washing-powder"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown__item-elem2">Вес</div>
-                          <div class="dropdown__item-elem3">215гр</div>
-                        </li>
-                        <li class="dropdown__item">
-                          <div class="dropdown__item-elem1">
-                            <svg class="dropdown__menu-icon">
-                              <use xlink:href="./sprite.svg#apitherapy"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown__item-elem2">Гарантия</div>
-                          <div class="dropdown__item-elem3">1 год</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="shop-section__desc">
-                    <div class="shop-section__desc-title">
-                      beats solo pro. цвет «красный цитрус»
-                    </div>
-                    <div class="shop-section__desc-subtitle">
-                      Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
-                    </div>
-                  </div>
-                  <div class="shop-section__char">
-                    <div class="shop-section__char-elem1">
-                      <div class="shop-section__char-title">Зарядка</div>
-                      <div class="shop-section__char-subtitle">2 часа</div>
-                    </div>
-                    <div class="shop-section__char-elem2">
-                      <div class="shop-section__char-title">Вес</div>
-                      <div class="shop-section__char-subtitle">215 грамм</div>
-                    </div>
-                  </div>
-                  <div class="shop-section__price">
-                    <div class="shop-section__price-elem">14 990 ₽</div>
-                    <a href="#" class="button button--shop--button">Заказать</a>
-                  </div>
-                </div>
-              </li>
             </ul>
           </div>
-          <a href="#" class="arrow" id="right">
+          <a href="#" class="arrow arrow__right" id="right">
             <svg class="icon arrow__icon">
               <use xlink:href="./sprite.svg#right"></use>
             </svg>
           </a>
         </div>
       </section>
-      <section class="section team-section">
+      <!-- <section class="section team-section">
         <div class="container team__container">
           <h2 class="section__title">Команда</h2>
           <ul class="team team--version--desktop">
@@ -417,7 +366,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="section reviews-section">
         <div class="container reviews__container">
           <h2 class="section__title">Отзывы</h2>
@@ -482,11 +431,11 @@
           </div>
         </div>
       </section>
-      <section class="section yt-player-section">
+      <!-- <section class="section yt-player-section">
         <div class="container yt-container">
           <h2 class="section__title">Как мы работаем</h2>
         </div>
-      </section>
+      </section> -->
       <section class="section order-section section--font-color--white">
         <div class="container order-section__container">
           <h2 class="section__title">Закажите доставку</h2>
@@ -609,34 +558,6 @@
       </section>
     </div>
   </div>
-  <div class="fullscreen-menu">
-    <a href="#" class="fullscreen-menu__close"></a>
-    <nav class="menu menu">
-      <ul class="menu__list menu__list--vertical">
-        <li class="menu__item">
-          <a href="#" class="menu__link">О нас</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Наушники</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Команда</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Цвета</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Отзывы</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Как мы работаем</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
@@ -668,7 +589,7 @@
       </li>
     </ul>
   </nav>
-  <div class="modal" id="modal">
+  <!-- <div class="modal" id="modal">
     <div class="modal__container">
       <div class="modal__content">
         Сообщение отправлено
@@ -677,10 +598,11 @@
     <div class="modal__button-container">
       <a href="#" class="button button--modal--button">Закрыть</a>
     </div>
-  </div>
+  </div> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./JS/slider.js"></script>
   <script src="./JS/tabs.js"></script>
   <script src="./JS/accord.js"></script>
+  <script src="./JS/fullscreen-menu.js"></script>
 </body>
 </html>
