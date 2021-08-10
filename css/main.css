@@ -1170,22 +1170,7 @@ img {
           align-items: center;
 }
 
-.arrow__icon {
-  width: 0.875rem;
-  height: 1.6875rem;
-}
-.arrow__icon:hover {
-  fill: #E01F3D;
-}
-
-.slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-.slider-items {
+.slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,7 +1179,7 @@ img {
   transition: right 0.3s;
 }
 @media screen and (max-width: 768px) {
-  .slider-items {
+  .slider__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1202,7 +1187,7 @@ img {
   }
 }
 
-.slider-item {
+.slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,7 +1201,7 @@ img {
           box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
-  .slider-item {
+  .slider__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1227,11 +1212,34 @@ img {
   }
 }
 
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 768px) {
-  .item-section {
-    height: 19.125rem;
-    width: 19.125rem;
-    margin-bottom: 3.125rem;
+  .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slick-track {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1255,8 +1263,20 @@ img {
   }
 }
 
+.shop-section__pic, .shop-section__img {
+  width: 28.25rem;
+  height: 28.25rem;
+}
+@media screen and (max-width: 768px) {
+  .shop-section__pic, .shop-section__img {
+    height: 19.125rem;
+    width: 19.125rem;
+    margin-bottom: 3.125rem;
+  }
+}
+
 .shop-section__text {
-  width: 26.1875rem;
+  max-width: 26.25rem;
   margin-left: 3.6875rem;
   display: -webkit-box;
   display: -ms-flexbox;

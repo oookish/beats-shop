@@ -18,8 +18,20 @@
   }
 }
 
+.shop-section__pic, .shop-section__img {
+  width: rem(452px);
+  height: rem(452px);
+
+  @include tablets {
+    height: rem(306px);
+    width: rem(306px);
+    margin-bottom: rem(50px);
+  }
+}
+
+
 .shop-section__text {
-  width: rem(419px);
+  max-width: rem(420px);
   margin-left: rem(59px);
   display: flex;
   flex-direction: column;

@@ -4,21 +4,7 @@
   align-items: center;
 }
 
-.arrow__icon {
-  width: rem(14px);
-  height: rem(27px);
-
-  &:hover {
-    fill: $red;
-  }
-}
-
-.slider {
-  display: flex;
-  overflow: hidden;
-}
-
-.slider-items {
+.slider__list {
   display: flex;
   position: relative;
   transition: right 0.3s;
@@ -28,7 +14,7 @@
   }
 }
 
-.slider-item {
+.slider__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,10 +26,19 @@
   }
 }
 
-.item-section {
+.slide {
+  display: flex;
+
   @include tablets {
-    height: rem(306px);
-    width: rem(306px);
-    margin-bottom: rem(50px);
+    flex-direction: column;
+  }
+}
+
+.slick-track {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
   }
 }
