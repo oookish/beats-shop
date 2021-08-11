@@ -18,11 +18,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 
   @include tablets {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.slider {
+  padding-left: rem(33px);
+  width: 100%;
+
+  @include tablets {
+    padding-left: 0;
+  }
+
+  @include phones {
+    padding-left: 0;
   }
 }
 
@@ -31,14 +43,40 @@
 
   @include tablets {
     flex-direction: column;
+    align-items: center;
   }
 }
 
-.slick-track {
-  display: flex;
+.arrow {
+  z-index: 100;
+  position: absolute;
+  top: 45%;
 
   @include tablets {
-    flex-direction: column;
-    align-items: center;
+    top: 22%;
+  }
+}
+
+.arrow__left {
+  left: 0%;
+
+  @include tablets {
+    left: 15%;
+  }
+
+  @include phones {
+    left: 0%;
+  }
+}
+
+.arrow__right {
+  right: 0%;
+
+  @include tablets {
+    right: 15%;
+  }
+
+  @include phones {
+    right: 0%;
   }
 }

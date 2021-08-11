@@ -5,8 +5,8 @@ $(document).ready(function() {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    prevArrow: '.arrow-prev',
-    nextArrow: '.arrow-next',
+    prevArrow: '.arrow__left',
+    nextArrow: '.arrow__right',
   });
 
 });

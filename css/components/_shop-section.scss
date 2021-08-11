@@ -42,11 +42,12 @@
 }
 
 .shop-section-settings {
+  position: relative;
   margin-bottom: rem(24px);
   &:hover {
-    .dropdown__menu, .dropdown__menu2 {
+    .dropdown__menu {
       opacity: 1;
-      transition: 0.5s;
+      transition: 0.3s;
     }
   }
 
@@ -58,6 +59,7 @@
 .settings__icon {
   height: rem(92px);
   width: rem(92px);
+
 }
 
 .shop-section__desc {
