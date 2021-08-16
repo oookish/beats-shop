@@ -1583,9 +1583,23 @@ img {
   width: 13.75rem;
 }
 
+.team__item--active .team-section__icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .team__member {
   width: 13.75rem;
   margin-bottom: 1.5625rem;
+}
+
+.team-section__icon {
+  margin-left: 0.3125rem;
+  margin-top: 0.3125rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .team__content {
@@ -1622,17 +1636,6 @@ img {
   position: relative;
   border: 0rem;
   background-color: #fff;
-}
-.team__title::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -0.75rem;
-  top: 0.125rem;
-  margin-left: -1rem;
-  margin-top: 0.4rem;
-  border: 0.4375rem solid transparent;
-  border-top: 0.4375rem solid #E01F3D;
 }
 
 .team__occ {

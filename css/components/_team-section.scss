@@ -11,9 +11,23 @@
   width: rem(220px);
 }
 
+.team__item--active{
+  .team-section__icon {
+    transform: rotate(180deg);
+  }
+}
+
 .team__member {
   width: rem(220px);
   margin-bottom: rem(25px);
+}
+
+.team-section__icon {
+  margin-left: rem(5px);
+  margin-top: rem(5px);
+  width: rem(12px);
+  height: rem(12px);
+  transition: 0.3s;
 }
 
 .team__content {
@@ -40,18 +54,6 @@
   position: relative;
   border: 0rem;
   background-color: #fff;
-
-  &::before{
-    content: "";
-    display: block;
-    position: absolute;
-    right: -0.75rem;
-    top: rem(2px);
-    margin-left: -1rem;
-    margin-top: 0.4rem;
-    border: 0.4375rem solid transparent;
-    border-top: 0.4375rem solid $red;
-  }
 }
 
 .team__occ {
