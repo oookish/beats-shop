@@ -1569,6 +1569,10 @@ img {
   min-height: 28.375rem;
 }
 
+.mobile__container {
+  display: none;
+}
+
 .team__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1646,6 +1650,33 @@ img {
   color: #666666;
 }
 
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+
+  .mobile__container {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .team__title {
+    font-size: 1.375rem;
+  }
+
+  .team__item {
+    width: 15.625rem;
+  }
+}
 .modal {
   background-color: #fff;
   width: 19.375rem;

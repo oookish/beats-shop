@@ -1,7 +1,12 @@
+
 .team--version--desktop {
   display: flex;
   justify-content: space-between;
   min-height: rem(454px);
+}
+
+.mobile__container {
+  display: none;
 }
 
 .team__item {
@@ -62,5 +67,30 @@
 
 .team__content-text {
   color: $body;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .team--version--desktop {
+    display: none;
+  }
+
+  .mobile__container {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .team--version--mobile {
+  }
+
+  .team__title {
+    font-size: rem(22px);
+  }
+
+  .team__item {
+    width: rem(250px);
+  }
 }
 
