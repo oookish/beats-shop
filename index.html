@@ -12,6 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  
 
 </head>
 <body>
@@ -783,21 +787,25 @@
       </li>
     </ul>
   </nav>
-  <!-- <div class="modal" id="modal">
-    <div class="modal__container">
+  <div class="modal" id="modal">
+    <div class="modal__body">
       <div class="modal__content">
-        Сообщение отправлено
+        <div class="modal__text">
+          Сообщение отправлено
+        </div>
+        <div class="modal__button-container">
+          <a href="#" class="button button--modal--button">Закрыть</a>
+        </div>
       </div>
     </div>
-    <div class="modal__button-container">
-      <a href="#" class="button button--modal--button">Закрыть</a>
-    </div>
-  </div> -->
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="./JS/slick.min.js"></script>
   <script src="./JS/slider.js"></script>
   <script src="./JS/tabs.js"></script>
   <script src="./JS/accord.js"></script>
   <script src="./JS/fullscreen-menu.js"></script>
+  <script src="./JS/modal.js"></script>
 </body>
 </html>
