@@ -1673,8 +1673,16 @@ img {
     font-size: 1.375rem;
   }
 
+  .team--version--mobile {
+    position: absolute;
+  }
+
   .team__item {
     width: 15.625rem;
+  }
+
+  .block1 {
+    height: 31.25rem;
   }
 }
 .modal {
