@@ -71,6 +71,10 @@
   }
 }
 
+.form__input.error {
+  border-color: $red;
+}
+
 .form__controls {
   display: flex;
   flex-wrap: wrap;

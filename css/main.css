@@ -909,6 +909,10 @@ img {
   outline: none;
 }
 
+.form__input.error {
+  border-color: #E01F3D;
+}
+
 .form__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1679,6 +1683,13 @@ img {
 
   .team__item {
     width: 15.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .team__item--active .team__content {
+    height: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .block1 {

@@ -92,7 +92,17 @@
 
   .team__item {
     width: rem(250px);
+    margin-bottom: rem(20px);
   }
+
+  .team__item--active{
+    .team__content {
+      height: 100%;
+      transition: 0.3s;
+    }
+  }
+
+
 
   .block1 {
     height: rem(500px);
