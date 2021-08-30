@@ -1719,6 +1719,15 @@ img {
   display: none;
 }
 
+.modal.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal.open body.overflow-hidden {
+  overflow: hidden;
+}
+
 .modal__content {
   background-color: #fff;
   width: 19.375rem;
@@ -1740,6 +1749,8 @@ img {
 }
 
 .modal__text {
+  text-align: center;
+  width: 15.9375rem;
   font-size: 1.125rem;
   margin-bottom: 0.9375rem;
 }

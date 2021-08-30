@@ -12,6 +12,13 @@
   display: none;
 }
 
+.modal.open {
+  display: flex;
+  body.overflow-hidden {
+    overflow: hidden;
+}
+}
+
 .modal__content {
   background-color: #fff;
   width: rem(310px);
@@ -26,6 +33,8 @@
 }
 
 .modal__text {
+  text-align: center;
+  width: rem(255px);
   font-size: rem(18px);
   margin-bottom: rem(15px);
 }

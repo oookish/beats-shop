@@ -1,19 +1,19 @@
 const validateFields = (form, fieldsArray) => {
-  
-  fieldsArray.forEach(field => {
-    field.removeClass('error');
-    if (field.val().trim() == '') {
-      field.addClass('error');
+
+  fieldsArray.forEach((field) => {
+    if (field.val().trim() == "") {
+      field.addClass("error");
+    } else {
+      field.removeClass("error");
     }
   });
 
-  const errorFields = form.find('.error');
+  const errorFields = form.find(".error");
 
   return errorFields.length == 0;
-
 }
 
-$('.form').submit(e => {
+$("form").submit(e => {
   e.preventDefault();
 
   const form = $(e.currentTarget);
@@ -22,29 +22,44 @@ $('.form').submit(e => {
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
 
-  const modal = $('#modal');
-  const content = modal.find('.modal__text');
+  const modal = $("#modal");
+  const content = modal.find(".modal__text");
 
-  const isValid = validateFields (form, [name, phone, comment, to]);
+  modal.removeClass("error-modal");
+
+  const isValid = validateFields(form, [name, phone, comment, to]);
 
   if (isValid) {
-    $.ajax({
-      url: 'https://webdev-api.loftschool.com/sendmail',
-      method: 'post',
+    const request = $.ajax({
+      url: "https://webdev-api.loftschool.com/sendmail",
+      method: "post",
       data: {
         name: name.val(),
         phone: phone.val(),
         comment: comment.val(),
-        to: to.val(),
-      },
-
-      success: data => {
-        content.text(data.message);
-        $.fancybox.open({
-          src: "#modal",
-          type: "inline"
-        });
+        to: to.val()
       }
     });
+
+    request.done((data) => {
+      content.text(data.message);
+      e.target.reset();
+    });
+
+    request.fail((data) => {
+      const message = data.responseJSON.message;
+      content.text(message);
+      modal.addClass("error-modal");
+    });
+
+    request.always(() => {
+      $(".modal").addClass("open");
+    })
   }
 });
+
+$(".modal__button-container").on("click", function (event) {
+  $(".modal").removeClass("open");
+})
+
+
